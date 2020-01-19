@@ -1,0 +1,27 @@
+apiVersion: v1
+entries:
+  gitea:
+  - apiVersion: v1
+    appVersion: 1.9.3
+    created: "2020-01-19T23:12:44.487935726+01:00"
+    description: Git with a cup of tea
+    digest: 443d01c90695750f1d417da9b8de6c49179d82d3807481b28867cd11308c86cd
+    icon: https://docs.gitea.io/images/gitea.png
+    keywords:
+    - git
+    - issue tracker
+    - code review
+    - wiki
+    - gitea
+    - gogs
+    maintainers:
+    - email: john.felten@gmail.com
+      name: John Felten
+    name: gitea
+    sources:
+    - https://github.com/go-gitea/gitea
+    - https://hub.docker.com/r/gitea/gitea/
+    urls:
+    - https://johnrazeur.github.io/my-serveur-helm-charts/gitea-1.9.3.tgz
+    version: 1.9.3
+generated: "2020-01-19T23:12:44.485959921+01:00"
