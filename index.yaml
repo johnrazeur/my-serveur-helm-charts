@@ -22,6 +22,6 @@ entries:
     - https://github.com/go-gitea/gitea
     - https://hub.docker.com/r/gitea/gitea/
     urls:
-    - https://github.com/johnrazeur/my-serveur-helm-charts/releases/download/gitea-1.9.5/gitea-1.9.5.tgz
+    - https://github.com/johnrazeur/my-serveur-helm-charts/releases/download/gitea-1.9.3/gitea-1.9.3.tgz
     version: 1.9.3
 generated: "2020-01-19T23:16:29.234754517+01:00"
