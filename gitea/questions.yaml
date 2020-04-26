@@ -1,0 +1,14 @@
+questions:
+- variable: service.http.externalPort
+  default: 8280
+  description: "External port of gitea"
+  type: int
+  required: true
+  label: External port of gitea
+  group: "Network"
+- variable: service.http.externalHost
+  default: "gitea.example.com"
+  type: string
+  description: "External host of gitea"
+  label: External host of gitea
+  group: "Network"
