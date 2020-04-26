@@ -257,14 +257,6 @@ data:
     DSA = 1024
 
     [database]
-    {{ if .Values.externalDB }}
-    ; Either "mysql", "postgres", "mssql" or "sqlite3", it's your choice
-    DB_TYPE = {{ .Values.dbType }}
-    HOST = {{ .Values.externalDB.dbHost }}:{{ .Values.externalDB.dbPort }}
-    NAME = {{ .Values.externalDB.dbDatabase }}
-    USER = {{ .Values.externalDB.dbUser }}
-    PASSWD = {{ .Values.externalDB.dbPassword }}
-    {{ else if .Values.useInPodPostgres }}
     ; Either "mysql", "postgres", "mssql" or "sqlite3", it's your choice
     DB_TYPE = postgres
     HOST = 127.0.0.1:5432
@@ -272,7 +264,6 @@ data:
     USER = postgres
     ; Use PASSWD = `your password` for quoting if you use special characters in the password.
     PASSWD = POSTGRES_PASSWORD
-    {{ end }}
     ; For "postgres" only, either "disable", "require" or "verify-full"
     SSL_MODE = disable
     ; For "sqlite3" and "tidb", use an absolute path when you start gitea as service
