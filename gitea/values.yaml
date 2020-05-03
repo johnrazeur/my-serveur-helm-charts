@@ -20,7 +20,7 @@ memcached:
 
 ## ingress settings - Optional
 ingress:
-  enabled: false
+  enabled: true
   ## annotations used by the ingress - ex for k8s nginx ingress controller:
   #ingress_annotations:
   #  kubernetes.io/ingress.class: nginx
